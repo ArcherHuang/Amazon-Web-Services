@@ -1,10 +1,10 @@
 import boto3
  
 dynamodb_client = boto3.resource(  
-    'dynamodb',
-    aws_access_key_id = '',
-    aws_secret_access_key = '',
-    region_name = 'us-east-1'
+    'dynamodb'#,
+    #aws_access_key_id = '',
+    #aws_secret_access_key = '',
+    #region_name = 'us-east-1'
 )
 
 table = dynamodb_client.Table('staff')

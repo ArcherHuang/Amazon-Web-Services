@@ -1,10 +1,18 @@
+# *****************************************************************************
+# Description: Create Table
+# *****************************************************************************
+#
+# install the required packages
+# sudo pip install awscli
+# sudo pip install boto3
+
 import boto3
 
 dynamodb = boto3.resource(  
-    'dynamodb',
-    aws_access_key_id = '',
-    aws_secret_access_key = '',
-    region_name = 'us-east-1'
+    'dynamodb'#,
+    #aws_access_key_id = '',
+    #aws_secret_access_key = '',
+    #region_name = 'us-east-1'
 )
 
 table = dynamodb.create_table(  
