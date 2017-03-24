@@ -21,7 +21,7 @@ dynamodb = boto3.resource(
 table = dynamodb.Table('test')
 
 response = table.scan(  
-    FilterExpression=Attr('temperature').gt(25)
+    FilterExpression=Attr('temperature').gt(25) & Attr('timeStamp').eq('temperatureHumidity')
 )
 
 items = response['Items']  
