@@ -1,3 +1,13 @@
+# *****************************************************************************
+# Description: get Item
+# *****************************************************************************
+#
+# install the required packages
+# sudo pip install awscli
+# sudo pip install boto3
+#
+# aws configure
+
 import boto3  
 from boto3.dynamodb.conditions import Key, Attr
 

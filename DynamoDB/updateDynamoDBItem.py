@@ -5,6 +5,8 @@
 # install the required packages
 # sudo pip install awscli
 # sudo pip install boto3
+#
+# aws configure
 
 import boto3
 
