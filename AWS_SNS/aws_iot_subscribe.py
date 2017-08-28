@@ -36,5 +36,5 @@ myAWSIoTMQTTClient.configureMQTTOperationTimeout(5)  # 5 sec
 myAWSIoTMQTTClient.connect()
 
 while True:
-	myAWSIoTMQTTClient.subscribe("alertMessage/#", 1, customCallback)
+	myAWSIoTMQTTClient.subscribe("/alertMessage/#", 1, customCallback)
 	time.sleep(2)
